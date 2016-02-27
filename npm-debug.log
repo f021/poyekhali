@@ -1,0 +1,112 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@3.6.0
+3 info using node@v5.6.0
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/shik/fzth/npm/poyekhali',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/shik/.npm/poyekhali/0.0.1/package.tgz not in flight; packing
+9 verbose correctMkdir /Users/shik/.npm correctMkdir not in flight; initializing
+10 info lifecycle poyekhali@0.0.1~prepublish: poyekhali@0.0.1
+11 verbose lifecycle poyekhali@0.0.1~prepublish: unsafe-perm in lifecycle true
+12 verbose lifecycle poyekhali@0.0.1~prepublish: PATH: /usr/local/lib/node_modules/npm/bin/node-gyp-bin:/Users/shik/fzth/npm/poyekhali/node_modules/.bin:/Library/Frameworks/Python.framework/Versions/3.5/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/usr/local/bin:/bin:/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin:/opt/local/bin:/opt/local/sbin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Users/shik/.cabal/bin:/Applications/ghc-7.10.1.app/Contents/bin:/Users/shik/bin/lein:/Users/shik/anaconda/bin:/Users/shik/.cabal/bin:/Applications/ghc-7.10.1.app/Contents/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/git/bin:/usr/local/go/bin:/usr/local/smlnj/bin:/Users/shik/Applications/scala/bin:/usr/local/go/bin
+13 verbose lifecycle poyekhali@0.0.1~prepublish: CWD: /Users/shik/fzth/npm/poyekhali
+14 silly lifecycle poyekhali@0.0.1~prepublish: Args: [ '-c', 'npm run build' ]
+15 silly lifecycle poyekhali@0.0.1~prepublish: Returned: code: 0  signal: null
+16 verbose tar pack [ '/Users/shik/.npm/poyekhali/0.0.1/package.tgz',
+16 verbose tar pack   '/Users/shik/fzth/npm/poyekhali' ]
+17 verbose tarball /Users/shik/.npm/poyekhali/0.0.1/package.tgz
+18 verbose folder /Users/shik/fzth/npm/poyekhali
+19 verbose addLocalTarball adding from inside cache /Users/shik/.npm/poyekhali/0.0.1/package.tgz
+20 verbose correctMkdir /Users/shik/.npm correctMkdir not in flight; initializing
+21 silly cache afterAdd poyekhali@0.0.1
+22 verbose afterAdd /Users/shik/.npm/poyekhali/0.0.1/package/package.json not in flight; writing
+23 verbose correctMkdir /Users/shik/.npm correctMkdir not in flight; initializing
+24 verbose afterAdd /Users/shik/.npm/poyekhali/0.0.1/package/package.json written
+25 silly publish { name: 'poyekhali',
+25 silly publish   version: '0.0.1',
+25 silly publish   description: 'poyekhali',
+25 silly publish   main: 'dist/index.js',
+25 silly publish   scripts:
+25 silly publish    { test: 'echo "Error: no test specified" && exit 1',
+25 silly publish      build: 'babel src --out-dir dist',
+25 silly publish      prepublish: 'npm run build' },
+25 silly publish   repository:
+25 silly publish    { type: 'git',
+25 silly publish      url: 'git+https://github.com/f021/poyekhali.git' },
+25 silly publish   author:
+25 silly publish    { name: 'f021',
+25 silly publish      email: 'andrei.fzto@gmail.com',
+25 silly publish      url: 'http://f021.github.io/' },
+25 silly publish   license: 'MIT',
+25 silly publish   bugs: { url: 'https://github.com/f021/poyekhali/issues' },
+25 silly publish   homepage: 'https://github.com/f021/poyekhali#readme',
+25 silly publish   devDependencies:
+25 silly publish    { 'babel-cli': '6.5.1',
+25 silly publish      'babel-preset-es2015': '6.5.0',
+25 silly publish      'babel-preset-stage-0': '6.5.0',
+25 silly publish      'babel-preset-stage-1': '6.5.0',
+25 silly publish      'babel-preset-stage-2': '6.5.0' },
+25 silly publish   readme: 'poyekhali\n',
+25 silly publish   readmeFilename: 'README.md',
+25 silly publish   gitHead: '422e9b72ddbd203064fe3655a2f625ed52fc1aac',
+25 silly publish   _id: 'poyekhali@0.0.1',
+25 silly publish   _shasum: '5940b4105f5eb9c62e17af5d72238fe39b37c27a',
+25 silly publish   _from: '.' }
+26 verbose getPublishConfig undefined
+27 silly mapToRegistry name poyekhali
+28 silly mapToRegistry using default registry
+29 silly mapToRegistry registry https://registry.npmjs.org/
+30 silly mapToRegistry uri https://registry.npmjs.org/poyekhali
+31 verbose publish registryBase https://registry.npmjs.org/
+32 silly publish uploading /Users/shik/.npm/poyekhali/0.0.1/package.tgz
+33 verbose request uri https://registry.npmjs.org/poyekhali
+34 verbose request sending authorization for write operation
+35 info attempt registry request try #1 at 5:02:59 PM
+36 verbose request using bearer token for auth
+37 verbose request id 0b894895b2ab91d2
+38 http request PUT https://registry.npmjs.org/poyekhali
+39 http 403 https://registry.npmjs.org/poyekhali
+40 verbose headers { 'content-type': 'application/json',
+40 verbose headers   'cache-control': 'max-age=300',
+40 verbose headers   'content-length': '95',
+40 verbose headers   'accept-ranges': 'bytes',
+40 verbose headers   date: 'Sat, 27 Feb 2016 14:03:01 GMT',
+40 verbose headers   via: '1.1 varnish',
+40 verbose headers   connection: 'keep-alive',
+40 verbose headers   'x-served-by': 'cache-fra1227-FRA',
+40 verbose headers   'x-cache': 'MISS',
+40 verbose headers   'x-cache-hits': '0',
+40 verbose headers   'x-timer': 'S1456581780.156947,VS0,VE1221' }
+41 verbose request invalidating /Users/shik/.npm/registry.npmjs.org/poyekhali on PUT
+42 error publish Failed PUT 403
+43 verbose stack Error: "You cannot publish over the previously published version 0.0.1." : poyekhali
+43 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+43 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+43 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+43 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:198:22)
+43 verbose stack     at emitTwo (events.js:100:13)
+43 verbose stack     at Request.emit (events.js:185:7)
+43 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1035:10)
+43 verbose stack     at emitOne (events.js:95:20)
+43 verbose stack     at Request.emit (events.js:182:7)
+43 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:962:12)
+44 verbose statusCode 403
+45 verbose pkgid poyekhali
+46 verbose cwd /Users/shik/fzth/npm/poyekhali
+47 error Darwin 15.3.0
+48 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "publish"
+49 error node v5.6.0
+50 error npm  v3.6.0
+51 error code E403
+52 error "You cannot publish over the previously published version 0.0.1." : poyekhali
+53 error If you need help, you may report this error at:
+53 error     <https://github.com/npm/npm/issues>
+54 verbose exit [ 1, true ]
