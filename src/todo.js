@@ -1,4 +1,4 @@
-import resizeArr from './resizeArr'
+import { resizeArr } from './resizeArr'
 
 export const todo = (from, to) =>
   (arr, w, x) =>

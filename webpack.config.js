@@ -1,6 +1,8 @@
 var path = require('path');
+var webpack = require('webpack');
 var libraryName = 'poyekhali';
 var outputFile = libraryName + '.js';
+var UglifyJsPlugin = webpack.optimize.UglifyJsPlugin;
 
 module.exports = {
   entry: __dirname + '/src/index.js',
