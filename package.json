@@ -8,7 +8,7 @@
     "build": "npm run makesrc && webpack",
     "prepublish": "npm run build",
     "dev": "webpack --progress --colors --watch",
-    "makesrc": "node makeIndex.js"
+    "makesrc": "node scripts/makeIndex.js src index.js"
   },
   "repository": {
     "type": "git",
@@ -31,6 +31,7 @@
     "chai": "3.5.0",
     "eslint": "2.2.0",
     "eslint-loader": "1.3.0",
+    "expect": "1.14.0",
     "jsdoc": "3.4.0",
     "mocha": "2.4.5",
     "webpack": "1.12.14"

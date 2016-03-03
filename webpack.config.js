@@ -18,17 +18,21 @@ module.exports = {
       {
         test: /(.jsx|.js)$/,
         loader: 'babel',
-        exclude: /node_modules/
+        include: [
+          path.resolve(__dirname, 'src')
+        ]
       },
       {
         test: /(\.jsx|\.js)$/,
         loader: "eslint-loader",
-        exclude: /node_modules/
+        include: [
+          path.resolve(__dirname, 'src')
+        ]
       }
     ]
   },
   resolve: {
     root: path.resolve('./src'),
-    extensions: ['', '.js']
+    extensions: ['', '.js', '.jsx']
   }
 };

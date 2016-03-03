@@ -2,7 +2,7 @@
 
 const fs = require('fs');
 const path = require('path');
-const source = `${__dirname}/${(process.argv[2] || 'src')}`;
+const source = path.resolve(__dirname, '..', process.argv[2]);
 const output = process.argv[3] || 'index.js';
 
 const makeText = xs =>

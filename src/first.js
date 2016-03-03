@@ -1,18 +1,14 @@
 /**
-* if string return arr
+* returns the value of first elements in string or array
 @memberOf poyekhali
 @category Function
-@sig
+@sig [ a ] -> a
 @param {(string|array)} xs
 @param {string} [n='']
-@return array
+@return {a}
 @example
   go.toArr('abc') //=> ['a', 'b', 'c']
   go.toArr([1,2,3]) //=> [1, 2, 3]
 */
-export const first = xs => {
-  if (typeof xs === 'string') {
-    xs = xs.split('')
-  }
-  return xs[0]
-}
+export const first = xs =>
+  xs[0]
