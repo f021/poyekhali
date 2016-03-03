@@ -4,8 +4,8 @@ var toArr = P.toArr;
 
 describe('toArr', function() {
   it('if string split to arr', function() {
-    assert.equal(['a', 'b', 'c'], toArr('abc'));
-    assert.equal([1, 2, 3], toArr([1, 2, 3]));
-    assert.equal(['a', 'b', 'c'], toArr('a,b,c', ','));
+    assert.deepEqual(['a', 'b', 'c'], toArr('abc'));
+    assert.deepEqual([1, 2, 3], toArr([1, 2, 3]));
+    assert.deepEqual(['a', 'b', 'c'], toArr('a,b,c', ','));
   })
 })

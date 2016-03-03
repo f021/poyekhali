@@ -2,7 +2,7 @@
   "name": "poyekhali",
   "version": "0.1.1",
   "description": "",
-  "main": "dist/index.js",
+  "main": "dist/poyekhali.js",
   "scripts": {
     "test": "clear && npm run build && mocha",
     "build": "webpack",
