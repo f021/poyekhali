@@ -10,5 +10,3 @@
   go.toArr('abc') //=> ['a', 'b', 'c']
   go.toArr([1,2,3]) //=> [1, 2, 3]
 */
-export const last = xs =>
-  xs[xs.length]
