@@ -1,3 +1,3 @@
 // sum :: [ Int ] -> Int
-export const sum = arr =>
+export const sumArr = arr =>
   arr.reduce((a,b) => a + b)

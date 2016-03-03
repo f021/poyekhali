@@ -1,13 +1,14 @@
 {
   "name": "poyekhali",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "",
   "main": "dist/poyekhali.js",
   "scripts": {
     "test": "clear && npm run build && mocha",
-    "build": "webpack",
+    "build": "npm run makesrc && webpack",
     "prepublish": "npm run build",
-    "dev": "webpack --progress --colors --watch"
+    "dev": "webpack --progress --colors --watch",
+    "makesrc": "node makeIndex.js"
   },
   "repository": {
     "type": "git",
@@ -31,6 +32,7 @@
     "eslint": "2.2.0",
     "eslint-loader": "1.3.0",
     "jsdoc": "3.4.0",
+    "mocha": "2.4.5",
     "webpack": "1.12.14"
   }
 }
