@@ -1,5 +1,5 @@
 var assert = require('assert');
-var t = require('../dist')
+var t = require('../dist/poyekhali')
 
 console.log(t)
 
