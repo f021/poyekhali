@@ -1,15 +1,16 @@
 /**
-* if string return arr
+* returns vector add of arrays
 @memberOf poyekhali
 @category Function
 @sig
-@param {(string|array)} xs
-@param {string} [n='']
+@param {array} xs
 @return array
 @example
-  go.toArr('abc') //=> ['a', 'b', 'c']
-  go.toArr([1,2,3]) //=> [1, 2, 3]
+  go.addVec([1, 1], [1, 1])
+  //=> [2, 2]
+  go.addVec([1, 2, 3], [1, 1, 1], [-1, -1, -1])
+  //=> [2, 3, 4]
 */
-import { vectorFn } from './vectorFn'
+import { applyVecFn } from './applyVecFn'
 
-export const addVec = vectorFn((a,b) => a + b)
+export const addVec = applyVecFn((a,b) => a + b)

@@ -1,14 +1,14 @@
 /**
-* if string return arr
+* returns true if objects equal, compating by JSON.stringify
 @memberOf poyekhali
 @category Function
 @sig
-@param {(string|array)} xs
-@param {string} [n='']
-@return array
+@param {object} a
+@param {objcet} b
+@return boolean
 @example
-  go.toArr('abc') //=> ['a', 'b', 'c']
-  go.toArr([1,2,3]) //=> [1, 2, 3]
+  go.sameObj({x: 1}, {x: 1}) //=> true
+  go.toArr({x: 1} , {y: 2}) //=> false
 */
 export const sameObj = (a, b) =>
   JSON.stringify(a) === JSON.stringify(b)

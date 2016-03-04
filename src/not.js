@@ -1,15 +1,12 @@
 /**
-* if string return arr
+* returns same as logical operator ! in JS
 @memberOf poyekhali
 @category Function
 @sig
-@param {(string|array)} xs
-@param {string} [n='']
-@return array
+@param {boolean} a
+@return boolean
 @example
-  go.toArr('abc') //=> ['a', 'b', 'c']
-  go.toArr([1,2,3]) //=> [1, 2, 3]
+  go.not(true) // => false
 */
 
-// not :: a -> Boolean
 export const not = a => !a

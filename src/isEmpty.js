@@ -1,14 +1,13 @@
 /**
-* if string return arr
+* returns true if false, null or undefined
 @memberOf poyekhali
 @category Function
 @sig
 @param {(string|array)} xs
-@param {string} [n='']
-@return array
+@return boolean
 @example
-  go.toArr('abc') //=> ['a', 'b', 'c']
-  go.toArr([1,2,3]) //=> [1, 2, 3]
+  go.isEmpty('abc') //=> false
+  go.toArr(false) //=> true
 */
 export const isEmpty = x =>
   (x === false || x === null || x === undefined)

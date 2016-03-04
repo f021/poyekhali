@@ -1,15 +1,16 @@
 /**
-* if string return arr
+* returns vector sub of arrays
 @memberOf poyekhali
 @category Function
 @sig
-@param {(string|array)} xs
-@param {string} [n='']
+@param {array} xs
 @return array
 @example
-  go.toArr('abc') //=> ['a', 'b', 'c']
-  go.toArr([1,2,3]) //=> [1, 2, 3]
+  go.subVec([1, 1], [1, 1])
+  //=> [0, 0]
+  go.subVec([1, 2, 3], [1, 1, 1], [-1, -1, -1])
+  //=> [1, 2, 3]
 */
-import { vectorFn } from './vectorFn'
+import { applyVecFn } from './applyVecFn'
 
-export const subVec = vectorFn((a,b) => a - b)
+export const subVec = applyVecFn((a,b) => a - b)

@@ -1,14 +1,13 @@
 /**
-* if string return arr
+* returns the value of the last element in thie string or array
 @memberOf poyekhali
 @category Function
 @sig
-@param {(string|array)} xs
-@param {string} [n='']
-@return array
+@param {(string|array)} xs - string or array
+@return {} returns the last value of xs
 @example
-  go.toArr('abc') //=> ['a', 'b', 'c']
-  go.toArr([1,2,3]) //=> [1, 2, 3]
+  go.last('abc') // => 'c'
+  go.last([1,2,3]) //=> 3
 */
 export const last = xs =>
-  xs[xs.length]
+  xs[xs.length - 1]

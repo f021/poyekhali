@@ -4,7 +4,7 @@
   "description": "",
   "main": "dist/poyekhali.js",
   "scripts": {
-    "test": "clear && npm run build && mocha",
+    "test": "clear && mocha",
     "build": "npm run makesrc && webpack",
     "prepublish": "npm run build",
     "dev": "webpack --progress --colors --watch",
