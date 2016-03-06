@@ -1,14 +1,15 @@
 /**
-* if string return arr
+* if argument is a function return function else return fasle
 @memberOf poyekhali
 @category Function
 @sig
-@param {(string|array)} xs
-@param {string} [n='']
-@return array
+@param {( function | a )} x
+@return {( Function| boolean )}
 @example
-  go.toArr('abc') //=> ['a', 'b', 'c']
-  go.toArr([1,2,3]) //=> [1, 2, 3]
+  go.isFunc(x => x)
+  // => x => x
+  go.isFunc(10)
+  // => false
 */
 export const isFunc = x =>
   typeof x === 'function' ? x : false

@@ -1,5 +1,5 @@
 /**
-* returns true if objects equal, compating by JSON.stringify
+* returns true if objects equal, compared by JSON.stringify
 @memberOf poyekhali
 @category Function
 @sig

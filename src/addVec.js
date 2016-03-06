@@ -1,9 +1,9 @@
 /**
-* returns vector add of arrays
+* returns sum of vectors
 @memberOf poyekhali
 @category Function
 @sig
-@param {array} xs
+@param { [ array ] } xs
 @return array
 @example
   go.addVec([1, 1], [1, 1])

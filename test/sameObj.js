@@ -1,7 +1,7 @@
 const expect = require('chai').expect
 const go = require('../dist/poyekhali')
 const sameObj = go.sameObj
-const msg = 'returns true if objects equal, compating by JSON.stringify'
+const msg = 'returns true if objects equal, compared by JSON.stringify'
 
 describe('sameObj', () => {
   it(msg, () => {
