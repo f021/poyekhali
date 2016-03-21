@@ -1,10 +1,10 @@
 const expect = require('chai').expect
 const go = require('../dist/poyekhali')
 const rsplit = go.rsplit
-const msg = 'returns splited array by row'
+
 
 describe('rsplit', () => {
-  it(msg, () => {
+  it('returns splited array by row', () => {
 
     const arr = [ 1, 2, 3, 4, 5, 6, 7, 8 ]
 

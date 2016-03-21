@@ -1,10 +1,9 @@
 const expect = require('chai').expect
 const go = require('../dist/poyekhali')
 const fillArr = go.fillArr
-const msg = 'return n-dimension array filling by param function'
 
 describe('fillArr', () => {
-  it(msg, () => {
+  it('return n-dimension array filling by param function', () => {
 
     const arr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 ]
 
@@ -67,31 +66,6 @@ describe('fillArr', () => {
         [ [ 12, 13 ], [ 14, 15 ], [ 16, 17 ] ],
         [ [ 18, 19 ], [ 20, 21 ], [ 22, 23 ] ]
       ])
-
-    
-
-    // expect(fillArr([2, 3, 4], (x, y, z) => z))
-    //   .to.deep.equal([
-    //     [ [  0,  1 ], [  2,  3 ], [  4,  5 ] ],
-    //     [ [  6,  7 ], [  8,  9 ], [ 10, 11 ] ],
-    //     [ [ 12, 13 ], [ 14, 15 ], [ 16, 17 ] ],
-    //     [ [ 18, 19 ], [ 20, 21 ], [ 22, 23 ] ]
-    //   ])
-
-      console.log(fillArr([ 4, 3 ],
-        (x, y) => arr[y+4] ))
-
-    // expect(fillArr([ 4, 3 ], (x, y) => arr[Math.floor(y/x)] ))
-    //   .to.deep.equal([
-    //     [ 1, 4 , 7, 10 ],
-    //     [ 2, 5 , 8, 11 ],
-    //     [ 3, 6 , 9, 12 ]
-    //   ])
-    // expect(fillArr([ 2, 3 ], (x, y) => arr[x] ))
-    //   to.deep.equal([
-    //     [ [ 1, 2 ], [ 3, 4 ], [ 5, 6 ] ],
-    //     [ [ 7, 8 ], [ 9, 10 ], [ 11, 12 ] ]
-    //   ])
 
   })
 })

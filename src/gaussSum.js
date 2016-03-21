@@ -13,5 +13,5 @@
   // => 3
 */
 // compose :: [Function] -> a -> a
-export const compose = (...fns) => x =>
-  fns.reduceRight((acc, fn) => fn(acc),  x)
+export const gaussSum = (a, b) =>
+  (a + b) * (Math.abs(a - b) + 1)/2

@@ -1,6 +1,5 @@
 /**
 * returns vector making by function rules
-
 @memberOf poyekhali
 @category Function
 @sig

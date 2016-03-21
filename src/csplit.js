@@ -11,8 +11,6 @@
   //=> [[1, 3], [2, 4]]
 */
 
-import { fillArr } from './fillArr'
-
 export const csplit = (arr, w) =>
   Array.from({ length : w}, (_, x) =>
     Array.from({ length: arr.length/w }, (_,y) =>

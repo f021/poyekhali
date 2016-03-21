@@ -10,7 +10,7 @@
   go.toArr('abc') //=> ['a', 'b', 'c']
   go.toArr([1,2,3]) //=> [1, 2, 3]
 */
-import { resizeArr } from './resizeArr'
+import { zoomArr } from './zoomArr'
 
 export const todo = (from, to) =>
   (arr, w, x) =>

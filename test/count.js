@@ -1,10 +1,9 @@
 const expect = require('chai').expect
 const go = require('../dist/poyekhali')
 const count = go.count
-const msg = 'wrap function with counter by right side'
 
 describe('count', () => {
-  it(msg, () => {
+  it('wrap function with counter by right side', () => {
 
     const arr = []
     const a = count(i => i)
@@ -25,6 +24,7 @@ describe('count', () => {
 
     arr.push(c(1))
     expect(arr).to.deep.equal([3])
+
     arr.push(c(1))
     expect(arr).to.deep.equal([3, 4])
 
