@@ -3,7 +3,7 @@ const go = require('../dist/poyekhali')
 const pascal = go.pascal
 
 describe('pascal triangle', () => {
-  it('\n1\n1 1\n1 2 1\n1 3 3 1\n1 4 6 4 1\n', () => {
+  it('(x, y) => i', () => {
     expect(pascal(0, 0)).to.be.equal(1)
     expect(pascal(0, 1)).to.be.equal(1)
     expect(pascal(1, 1)).to.be.equal(1)

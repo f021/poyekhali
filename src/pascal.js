@@ -10,11 +10,5 @@
   //=> fn()
 */
 
-export const pascal = (x, y) => {
-  console.log(x, y)
-  if (x === 0 || x === y || y ===0) {
-    return 1
-  } else {
-    return pascal(x - 1, y - 1) + pascal(x, y - 1)
-  }
-}
+export const pascal = (x, y) =>
+  x === 0 || x === y ?  1 : pascal(x - 1, y - 1) + pascal(x, y - 1)
